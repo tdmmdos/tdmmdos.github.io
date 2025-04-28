@@ -60,16 +60,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //----------------------------------------------------------------------------------------------------------------------------------
 // Mandar al form
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzxCamixP90w4AyVB1QJ3pA7v7kL1NrkY_DKrz2E3FaNm_eJRCZ8piY6wEPbMCgJZND/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzT-poShzeO8Wsj1kFUv95ZwaXGQb6_grTbtbmd1aGZd4_XRggridQ5qphph3Z5Z4QK/exec'
 const form = document.forms['my-google-sheet']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    
     btnSubmit.disabled = true;
     btnSubmit.style.backgroundColor = "#5a5a5a"
     document.getElementById("mensajeEnviando").style.display = "block";
-    
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         if (response.ok) {
@@ -98,4 +97,4 @@ form.addEventListener('submit', e => {
         }
 
         // Cambiar la URL cada 2 minutos
-        setInterval(changeUrl, 6000); // 2 minutos = 120,000 milisegundos
+        setInterval(changeUrl, 600); // 2 minutos = 120,000 milisegundos
