@@ -65,6 +65,11 @@ const form = document.forms['my-google-sheet']
 
 form.addEventListener('submit', e => {
     e.preventDefault()
+    
+    btnSubmit.disabled = true;
+    btnSubmit.style.backgroundColor = "#5a5a5a"
+    document.getElementById("mensajeEnviando").style.display = "block";
+    
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         if (response.ok) {
