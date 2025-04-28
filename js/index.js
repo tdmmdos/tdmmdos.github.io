@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Mandar al form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzT-poShzeO8Wsj1kFUv95ZwaXGQb6_grTbtbmd1aGZd4_XRggridQ5qphph3Z5Z4QK/exec'
 const form = document.forms['my-google-sheet']
+const btnSubmit = document.getElementById('btnSubmit');
 
 form.addEventListener('submit', e => {
     e.preventDefault()
