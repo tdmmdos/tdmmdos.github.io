@@ -62,14 +62,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Mandar al form
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzT-poShzeO8Wsj1kFUv95ZwaXGQb6_grTbtbmd1aGZd4_XRggridQ5qphph3Z5Z4QK/exec'
 const form = document.forms['my-google-sheet']
-const btnSubmit = document.getElementById('btnSubmit');
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    btnSubmit.disabled = true;
-    btnSubmit.style.backgroundColor = "#5a5a5a"
-    document.getElementById("mensajeEnviando").style.display = "block";
-
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         if (response.ok) {
