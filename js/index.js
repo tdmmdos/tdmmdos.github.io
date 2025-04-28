@@ -99,4 +99,4 @@ form.addEventListener('submit', e => {
         }
 
         // Cambiar la URL cada 2 minutos
-        setInterval(changeUrl, 600); // 2 minutos = 120,000 milisegundos
+        setInterval(changeUrl, 6000); // 2 minutos = 120,000 milisegundos
