@@ -2,7 +2,7 @@
   --celeste: #4e75ba;
   --rojo: #e65542;
   --blanco: #e9e9e9;
-  --gris: #5a5a5a;
+  --gris: #37474f;
   --grisoscuro: #423838;
   --negro: #000000;
 }
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background: linear-gradient(70deg, var(--celeste), var(--rojo));
+  background-color: #fb4d32
   padding: 4% 10%;
   font-family: "Roboto", sans-serif;
 }
