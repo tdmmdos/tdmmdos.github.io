@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //----------------------------------------------------------------------------------------------------------------------------------
 // Mandar al form
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzxG1vyYBT7WYEEi6liPWkL0ZSjFtVVoPEyxDcAux50TOVAGZZwP67Bm0icNbukgmjHqw/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz2vIlMrxhv7zh-1pZ5K2_fVD33mC2os0K2HmKq32vZYodE8nds82kOqYK6pLoJd14aqQ/exec'
 const form = document.forms['my-google-sheet']
 const btnSubmit = document.getElementById('btnSubmit');
 
